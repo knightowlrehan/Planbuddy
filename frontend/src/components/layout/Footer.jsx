@@ -88,8 +88,8 @@ export default function Footer() {
           </div>
 
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-12 max-w-6xl mx-auto">
-            <div className="text-white">
+          <div className="flex justify-between  mb-12 max-w-6xl mx-auto">
+            <div className="w-[580px] p-6  rounded-lg text-white text-left">
               <h3 className="text-3xl md:text-4xl font-bold mb-6">Get the Latest Updates</h3>
               <p className="text-gray-300 mb-8 text-base leading-relaxed">
                 Sign up to receive goal-setting tips, progress-tracking ideas, and the latest features from PlanBuddy—straight to your inbox.
@@ -113,20 +113,20 @@ export default function Footer() {
             </div>
 
             
-            <div className="text-white">
+            <div className="w-[450px] p-6 rounded-lg text-white text-left">
               <h3 className="text-3xl md:text-4xl font-bold mb-8">Get in Touch</h3>
               
             
               <div className="space-y-5 mb-8">
                 <div className="flex items-center gap-3">
                   <img src={mailIcon} alt="Mail" className="w-5 h-5 filter brightness-0 invert" />
-                  <a href="mailto:apptiura@gmail.com" className="hover:text-purple-400 transition-colors text-md">
+                  <a href="mailto:apptiura@gmail.com" className="hover:text-purple-400 transition-colors text-lg">
                     apptiura@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <img src={phoneIcon} alt="Phone" className="w-5 h-5 filter brightness-0 invert" />
-                  <a href="tel:0720102135" className="hover:text-purple-400 transition-colors text-md">
+                  <a href="tel:0720102135" className="hover:text-purple-400 transition-colors text-lg">
                     0720102135
                   </a>
                 </div>
@@ -158,7 +158,7 @@ export default function Footer() {
               </div>
 
             
-              <div className="flex items-center gap-4">
+              <div className="flex items-center -space-x-2">
                 <Button 
                 variant="download" 
                 text="Download App"
@@ -166,7 +166,7 @@ export default function Footer() {
                 <img 
                   src={avatar}
                   alt="Avatar" 
-                  className="w-32 h-32 object-contain"
+                  className="w-50 h-50 object-contain -ml-5"
                 />
               </div>
             </div>
