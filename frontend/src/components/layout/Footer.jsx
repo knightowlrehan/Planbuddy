@@ -1,9 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { Mail, Phone, Linkedin, Instagram } from 'lucide-react';
-import Logo from '../../../public/images/logo.png';
-import avatar from '../../../public/images/avatar/avatar_3.png';
+import { useState, useEffect } from 'react';
+import Button from '../common/Button';
+
+const Logo = '/images/logo.png';
+const avatar = '/images/avatar/avatar_3.png';
+const linkedinIcon = '/images/social-media/linkedin.png';
+const instagramIcon = '/images/social-media/instagram.png';
+const tiktokIcon = '/images/social-media/tiktok.png';
+const arrowUpIcon = '/images/arrow-up-line.png';
+const phoneIcon = '/images/phone-fill1.png';
+const mailIcon = '/images/mail-fill.png';
 
 export default function Footer() {
+
   const [email, setEmail] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -33,19 +41,11 @@ export default function Footer() {
           className="fixed bottom-8 right-8 w-14 h-14 bg-yellow-500 hover:bg-yellow-600 text-black rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 z-50"
           aria-label="Scroll to top"
         >
-          <svg
+          <img 
+            src={arrowUpIcon} 
+            alt="Arrow up" 
             className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={3}
-              d="M5 15l7-7 7 7"
-            />
-          </svg>
+          />
         </button>
       )}
       
@@ -119,14 +119,14 @@ export default function Footer() {
             
               <div className="space-y-5 mb-8">
                 <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5" />
-                  <a href="mailto:apptiura@gmail.com" className="hover:text-purple-400 transition-colors text-base">
+                  <img src={mailIcon} alt="Mail" className="w-5 h-5 filter brightness-0 invert" />
+                  <a href="mailto:apptiura@gmail.com" className="hover:text-purple-400 transition-colors text-md">
                     apptiura@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5" />
-                  <a href="tel:0720102135" className="hover:text-purple-400 transition-colors text-base">
+                  <img src={phoneIcon} alt="Phone" className="w-5 h-5 filter brightness-0 invert" />
+                  <a href="tel:0720102135" className="hover:text-purple-400 transition-colors text-md">
                     0720102135
                   </a>
                 </div>
@@ -136,34 +136,33 @@ export default function Footer() {
               <div className="flex gap-4 mb-8">
                 <a
                   href="#"
-                  className="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors duration-200"
+                  className="w-12 h-12 bg-blue-400 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors duration-200"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="w-5 h-5" />
+                  <img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 bg-pink-600 hover:bg-pink-700 rounded-full flex items-center justify-center transition-colors duration-200"
+                  className="w-12 h-12 bg-pink-400 hover:bg-pink-700 rounded-full flex items-center justify-center transition-colors duration-200"
                   aria-label="Instagram"
                 >
-                  <Instagram className="w-5 h-5" />
+                  <img src={instagramIcon} alt="Instagram" className="w-8 h-8" />
                 </a>
                 <a
                   href="#"
-                  className="w-12 h-12 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors duration-200"
+                  className="w-12 h-12 bg-red-300 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors duration-200"
                   aria-label="TikTok"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.10z"/>
-                  </svg>
+                  <img src={tiktokIcon} alt="TikTok" className="w-8 h-8" />
                 </a>
               </div>
 
             
               <div className="flex items-center gap-4">
-                <button className="px-8 py-3 bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-lg transition-colors duration-200">
-                  Download App
-                </button>
+                <Button 
+                variant="download" 
+                text="Download App"
+              />
                 <img 
                   src={avatar}
                   alt="Avatar" 
