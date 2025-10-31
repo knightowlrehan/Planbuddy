@@ -52,13 +52,20 @@ export default function Footer() {
       <div className="relative">
         
         <svg 
-          className="absolute top-0 left-0 w-full h-full"
-          width="1920" 
-          height="542" 
-          viewBox="0 0 1920 542" 
+          className="absolute"
+          style={{
+            width: '1689px',
+            height: '2173px',
+            transform: '',
+            opacity: 1,
+            top: '-500px',
+            left: '-140px'
+          }}
+          width="1689.0875577259887" 
+          height="2173.55985731974" 
+          viewBox="0 0 1920 1242" 
           fill="none" 
           xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
         >
           <path 
             fillRule="evenodd" 
