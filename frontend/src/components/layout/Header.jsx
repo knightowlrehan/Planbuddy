@@ -33,10 +33,10 @@ const Header = () => {
               <img 
                 src={logo} 
                 alt="PlanBuddy Logo" 
-                className={`w-auto transition-all duration-300 ${isScrolled ? 'h-15' : 'h-20'}`}
+                className={`w-auto transition-all duration-300 ${isScrolled ? 'h-198px' : 'h-20'}`}
               />
             </div>
-            <a href='#'><span className="text-3xl font-bold text-black planbuddy-text">PlanBuddy</span></a>
+            <a href='#'><span className="text-4xl font-semibold font-weight-600 text-black planbuddy-text">PlanBuddy</span></a>
           </div>
           
           {/* Desktop  */}
@@ -45,7 +45,7 @@ const Header = () => {
               <a 
                 key={item.label}
                 href={item.href}
-                className="text-stone-800 hover:text-purple-600 font-medium transition-colors uppercase"
+                className="text-stone-800 hover:text-purple-600 transition-colors uppercase nav-item"
               >
                 {item.label}
               </a>
@@ -69,7 +69,7 @@ const Header = () => {
               <a 
                 key={item.label}
                 href={item.href}
-                className="block py-3 text-neutral-700 hover:text-primary-600 font-medium"
+                className="block py-3 text-neutral-700 hover:text-primary-600 nav-item"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
