@@ -139,6 +139,7 @@ export default function Footer() {
                 <Button 
                 variant="download" 
                 text="Download App"
+                className={styles.footerButton}
               />
                 <img 
                   src={avatar}
