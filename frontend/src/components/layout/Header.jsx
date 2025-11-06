@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../../../public/images/logo.png';
+import styles from './Header.module.css';
+
+const logo = '/images/logo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -24,52 +26,52 @@ const Header = () => {
   ]
   
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md mt-0' : 'bg-transparent mt-10'}`}>
-      <nav className="w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
-        <div className="flex justify-between items-center h-20">
+    <header className={`${styles.header} ${isScrolled ? styles.headerScrolled : styles.headerTransparent}`}>
+      <nav className={styles.nav}>
+        <div className={styles.navContainer}>
         
-          <div className="flex items-center gap-2">
-            <div className={`bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300 ${isScrolled ? 'w-12 h-12 m-3' : 'w-20 h-20 m-0'}`}>
+          <div className={styles.logoContainer}>
+            <div className={`${styles.logoCircle} ${isScrolled ? styles.logoCircleScrolled : styles.logoCircleDefault}`}>
               <img 
                 src={logo} 
                 alt="PlanBuddy Logo" 
-                className={`w-auto transition-all duration-300 ${isScrolled ? 'h-198px' : 'h-20'}`}
+                className={`${styles.logoImage} ${isScrolled ? styles.logoImageScrolled : styles.logoImageDefault}`}
               />
             </div>
-            <a href='#'><span className="text-4xl font-semibold font-weight-600 text-black planbuddy-text">PlanBuddy</span></a>
+            <a href='#' className={styles.brandText}>PlanBuddy</a>
           </div>
           
-          {/* Desktop  */}
-          <div className="hidden md:flex items-center gap-10 ml-auto">
+          {/* Desktop Navigation */}
+          <div className={styles.desktopNav}>
             {navItems.map((item) => (
-              <a 
-                key={item.label}
-                href={item.href}
-                className="text-stone-800 hover:text-purple-600 transition-colors uppercase nav-item"
-              >
-                {item.label}
-              </a>
+              <div key={item.label} className={styles.navItemContainer}>
+                <a 
+                  href={item.href}
+                  className={styles.navLink}
+                >
+                  {item.label}
+                </a>
+              </div>
             ))}
           </div>
           
-          
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden"
+            className={styles.mobileMenuButton}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
         
-        
+        {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
+          <div className={styles.mobileMenu}>
             {navItems.map((item) => (
               <a 
                 key={item.label}
                 href={item.href}
-                className="block py-3 text-neutral-700 hover:text-primary-600 nav-item"
+                className={styles.mobileNavLink}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
