@@ -1,0 +1,130 @@
+
+.statCard {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Mobile spacing for 375-480px */
+@media (min-width: 375px) and (max-width: 480px) {
+  .statCard {
+    margin: 0;
+    padding: 0.75rem;
+  }
+}
+
+/* Tablet spacing */
+@media (min-width: 481px) and (max-width: 1023px) {
+  .statCard {
+    margin: 0;
+    padding: 0.875rem;
+  }
+}
+
+/* Desktop spacing */
+@media (min-width: 1024px) {
+  .statCard {
+    margin: 0;
+    padding: 1.25rem;
+  }
+}
+
+
+.number {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0D0468;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* Mobile font sizes for 375-480px */
+@media (min-width: 375px) and (max-width: 480px) {
+  .number {
+    font-size: 1.75rem;
+  }
+}
+
+/* Tablet font sizes */
+@media (min-width: 481px) and (max-width: 767px) {
+  .number {
+    font-size: 2rem;
+  }
+}
+
+/* Desktop font sizes */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .number {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .number {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .number {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .number {
+    font-size: 4rem;
+  }
+}
+
+.label {
+ 
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0D0468;
+}
+
+/* Mobile font sizes for 375-480px */
+@media (min-width: 375px) and (max-width: 480px) {
+  .label {
+    font-size: 0.875rem;
+  }
+}
+
+/* Tablet font sizes */
+@media (min-width: 481px) and (max-width: 767px) {
+  .label {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop font sizes */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .label {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .label {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .label {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .label {
+    font-size: 2rem;
+  }
+}
