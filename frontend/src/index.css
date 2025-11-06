@@ -1,38 +1,56 @@
-@import "tailwindcss";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&family=Josefin+Sans:wght@400;500;600;700&family=Days+One&display=swap');
 
-@layer base {
-  body {
-    font-family: 'Inter', system-ui, sans-serif;
-    color: #27272a;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@layer components {
-  .planbuddy-text {
-    font-family: 'Josefin Sans', sans-serif;
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #27272a;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Global max-width constraint for 1920px */
+/* @media (min-width: 1920px) {
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
   }
-  
-  .hero-title {
-    font-family: 'Days One', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .nav-item {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-  
+} */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+
+.planbuddy-text {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.hero-title {
+  font-family: 'Days One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-item {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
