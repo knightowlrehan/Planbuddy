@@ -3,7 +3,6 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: #ffffff;
   padding: 80px 1.5rem;
 }
 
@@ -37,15 +36,16 @@
   }
 }
 
-
+/* Content Wrapper */
 .contentWrapper {
   max-width: 1600px;
   margin: 0 auto;
+  position: relative;
 }
 
-
+/* Section Title */
 .sectionTitle {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 2rem;
   line-height: 1.2;
   color: #0D0468;
@@ -76,14 +76,14 @@
 
 @media (min-width: 1280px) {
   .sectionTitle {
-    font-size: 3rem;
+    font-size: 2.75rem;
     margin-bottom: 5rem;
   }
 }
 
 @media (min-width: 1536px) {
   .sectionTitle {
-    font-size: 3.5rem;
+    font-size: 2.75rem;
     margin-bottom: 5.5rem;
   }
 }
@@ -94,26 +94,15 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  position: relative;
 }
 
 @media (min-width: 1024px) {
   .mainGrid {
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .mainGrid {
-    gap: 5rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  .mainGrid {
-    gap: 6rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
   }
 }
 
@@ -123,46 +112,82 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 @media (min-width: 640px) {
   .stepsContainer {
-    gap: 3rem;
+    gap: 3.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .stepsContainer {
-    max-width: 550px;
+   max-width: 850px;
     gap: 3.5rem;
+    padding-right: 350px;
+    margin-left: 100px;
   }
 }
 
 @media (min-width: 1280px) {
   .stepsContainer {
-    max-width: 600px;
-    gap: 4rem;
+    max-width: 950px;
+    gap: 3.5rem;
+    padding-right: 350px;
+    margin-left: 150px;
   }
 }
 
 @media (min-width: 1536px) {
   .stepsContainer {
-    max-width: 650px;
-    gap: 4.5rem;
+    max-width: 950px;
+    gap: 3.5rem;
+    padding-right: 350px;
+    margin-left: 200px;
   }
 }
 
-/* Step Item */
+
 .stepItem {
   display: flex;
   align-items: flex-start;
+  width: 100%;
 }
 
+@media (min-width: 1024px) {
+  .stepItem {
+    max-width: 100%;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .stepItemRight {
+    margin-left: auto;
+    padding-left: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .stepItemRight {
+    padding-left: 120px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .stepItemRight {
+    padding-left: 150px;
+  }
+}
+
+/* Step Content */
 .stepContent {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 1rem;
 }
 
@@ -174,111 +199,90 @@
 
 @media (min-width: 1024px) {
   .stepContent {
-    flex-direction: row;
-    align-items: flex-start;
     gap: 1.5rem;
   }
 }
 
 @media (min-width: 1280px) {
   .stepContent {
-    gap: 2rem;
+    gap: 1.75rem;
   }
 }
 
-/* Step Header (Number + Icon) */
-.stepHeader {
+
+.stepIconContainer {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  flex-shrink: 0;
-}
-
-@media (min-width: 1024px) {
-  .stepHeader {
-    flex-direction: column;
-    gap: 0.5rem;
-    min-width: 120px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .stepHeader {
-    min-width: 140px;
-  }
-}
-
-/* Step Number */
-.stepNumber {
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 1;
-  color: #D1D5DB;
-  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
 }
 
 @media (min-width: 640px) {
-  .stepNumber {
-    font-size: 4.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .stepNumber {
-    font-size: 5rem;
+  .stepIconContainer {
+    width: 110px;
+    height: 110px;
+    border-radius: 26px;
   }
 }
 
 @media (min-width: 1024px) {
-  .stepNumber {
-    font-size: 5.5rem;
+  .stepIconContainer {
+    width: 120px;
+    height: 120px;
+    border-radius: 28px;
   }
 }
 
 @media (min-width: 1280px) {
-  .stepNumber {
-    font-size: 6rem;
+  .stepIconContainer {
+    width: 130px;
+    height: 130px;
+    border-radius: 30px;
   }
 }
 
 @media (min-width: 1536px) {
-  .stepNumber {
-    font-size: 6.5rem;
+  .stepIconContainer {
+    width: 140px;
+    height: 140px;
+    border-radius: 32px;
   }
 }
 
 /* Step Icon */
 .stepIcon {
-  width: 40px;
-  height: 40px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
 }
 
 @media (min-width: 640px) {
   .stepIcon {
-    width: 45px;
-    height: 45px;
+    width: 75px;
+    height: 75px;
   }
 }
 
 @media (min-width: 1024px) {
   .stepIcon {
-    width: 50px;
-    height: 50px;
+    width: 85px;
+    height: 85px;
   }
 }
 
 @media (min-width: 1280px) {
   .stepIcon {
-    width: 55px;
-    height: 55px;
+    width: 120px;
+    height: 120px;
   }
 }
 
 @media (min-width: 1536px) {
   .stepIcon {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -287,27 +291,30 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
 }
 
 @media (min-width: 640px) {
   .stepText {
-    gap: 0.75rem;
+    gap: 1rem;
+    padding-top: 0.75rem;
   }
 }
 
 @media (min-width: 1024px) {
   .stepText {
     gap: 1rem;
+    padding-top: 1rem;
   }
 }
 
 /* Step Title */
 .stepTitle {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.3;
-  color: #0D0468;
+  color: black;
   margin: 0;
 }
 
@@ -364,84 +371,165 @@
 
 @media (min-width: 1024px) {
   .stepDescription {
-    font-size: 1.0625rem;
+    font-size: 1.1rem;
     line-height: 1.65;
   }
 }
 
 @media (min-width: 1280px) {
   .stepDescription {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     line-height: 1.7;
   }
 }
 
 @media (min-width: 1536px) {
   .stepDescription {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 }
 
-/* Phone Container */
-.phoneContainer {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 500px;
-  order: -1;
+
+/* Individual Step Customizations */
+
+
+.stepItem1, .stepItem2, .stepItem3, .stepItem4 {
+  margin-top: 2rem;
 }
 
-@media (min-width: 768px) {
-  .phoneContainer {
-    max-width: 600px;
+
+.stepText1 {
+  max-width: 500px;
+}
+
+.stepText2, .stepText3, .stepText4 {
+  max-width: 800px;
+}
+
+
+.stepIcon1 {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 640px) {
+  .stepIcon1 {
+    width: 60px;
+    height: 60px;
   }
 }
 
 @media (min-width: 1024px) {
-  .phoneContainer {
-    order: 1;
-    max-width: none;
+  .stepIcon1 {
+    width: 70px;
+    height: 70px;
   }
 }
 
-/* Phone Mockup */
+@media (min-width: 1280px) {
+  .stepIcon1 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .stepIcon1 {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .stepTitle1, .stepTitle2, .stepTitle3, .stepTitle4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .stepTitle1, .stepTitle2, .stepTitle3, .stepTitle4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .stepTitle1, .stepTitle2, .stepTitle3, .stepTitle4 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+.phoneContainer {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .phoneContainer {
+    display: block;
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 1280px) {
+  .phoneContainer {
+width: 320px;
+        right: -70px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .phoneContainer {
+    width: 320px;
+        right: -70px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .phoneContainer {
+    width: 320px;
+        right: -70px;
+  }
+}
+
+
 .phoneMockup {
   width: 100%;
-  max-width: 350px;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
 }
 
-@media (min-width: 640px) {
+
+@media (max-width: 1023px) {
+  .phoneContainer {
+    display: block;
+    order: -1;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 2rem;
+  }
+
   .phoneMockup {
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .phoneContainer {
     max-width: 400px;
   }
 }
 
-@media (min-width: 768px) {
-  .phoneMockup {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .phoneContainer {
     max-width: 450px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .phoneMockup {
-    max-width: 400px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .phoneMockup {
-    max-width: 450px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .phoneMockup {
-    max-width: 500px;
   }
 }
 
@@ -457,16 +545,22 @@
   }
 
   .stepsContainer {
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
-  .stepNumber {
-    font-size: 3.5rem;
+  .stepContent {
+    gap: 1.25rem;
   }
 
+  .stepIconContainer {
+    width: 85px;
+    height: 85px;
+    border-radius: 20px;
+  }
+  
   .stepIcon {
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
   }
 
   .stepTitle {
@@ -477,7 +571,7 @@
     font-size: 0.8125rem;
   }
 
-  .phoneMockup {
+  .phoneContainer {
     max-width: 300px;
   }
 }
