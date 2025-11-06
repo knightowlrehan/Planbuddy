@@ -1,0 +1,55 @@
+
+.statsSection {
+  padding: 2rem;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .statsSection {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .statsSection {
+    padding: 3.5rem;
+  }
+}
+
+.sectionContainer {
+  background-color: #F8EFFF;
+  border-radius: 1rem;
+  position: relative;
+  padding: 3rem 2rem;
+}
+
+.vectorBackground {
+  position: absolute;
+  top: 9rem;
+  right: 10rem;
+  height: auto;
+  opacity: 0.8;
+  z-index: 20;
+}
+
+
+@media (max-width: 768px) {
+  .vectorBackground {
+    display: none;
+  }
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .statsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
