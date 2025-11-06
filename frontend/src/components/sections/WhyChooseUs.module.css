@@ -1,0 +1,701 @@
+
+.whyChooseUsContainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 80px 1.5rem 20px;
+}
+
+@media (min-width: 640px) {
+  .whyChooseUsContainer {
+    padding: 100px 2rem 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .whyChooseUsContainer {
+    padding: 120px 2.5rem 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .whyChooseUsContainer {
+    padding: 140px 3rem 160px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .whyChooseUsContainer {
+    padding: 160px 4rem 160px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .whyChooseUsContainer {
+    padding: 200px 5rem 160px;
+  }
+}
+
+/* Decorative Blobs - Desktop Only */
+.decorativeBlobs {
+  display: none;
+}
+
+.decorativeBlobsSmall {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .decorativeBlobs {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    width: 90px;
+    height: 90px;
+    background-color: #e9d5ff;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 2;
+  }
+
+  .decorativeBlobsSmall {
+    display: block;
+    position: absolute;
+    bottom: 140px;
+    left: 110px;
+    width: 55px;
+    height: 55px;
+    background-color: #e9d5ff;
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1280px) {
+  .decorativeBlobs {
+    width: 100px;
+    height: 100px;
+    left: 50px;
+  }
+
+  .decorativeBlobsSmall {
+    width: 60px;
+    height: 60px;
+    left: 120px;
+    bottom: 150px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .decorativeBlobs {
+    width: 110px;
+    height: 110px;
+    left: 60px;
+    bottom: 100px;
+  }
+
+  .decorativeBlobsSmall {
+    width: 70px;
+    height: 70px;
+    left: 140px;
+    bottom: 170px;
+  }
+}
+
+/* Desktop Avatar - Top Right */
+.avatarContainerDesktop {
+  display: none;
+}
+
+@media (min-width: 481px) {
+  .avatarContainerDesktop {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    z-index: 5;
+  }
+}
+
+@media (min-width: 768px) {
+  .avatarContainerDesktop {
+    top: 30px;
+    right: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .avatarContainerDesktop {
+    top: -20px;
+    right: 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .avatarContainerDesktop {
+    top: 0px;
+    right: 25px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .avatarContainerDesktop {
+              top: -18px;
+        right: 65px;
+  }
+}
+
+.avatarDesktop {
+  width: 100px;
+  height: 100px;
+  
+  object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  .avatarDesktop {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .avatarDesktop {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .avatarDesktop {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .avatarDesktop {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Mobile Avatar - Centered on Vector */
+.avatarContainerMobile {
+  position: absolute;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: block;
+  top: -45px;
+}
+
+@media (min-width: 481px) {
+  .avatarContainerMobile {
+    display: none;
+  }
+}
+
+.avatarMobile {
+  width: 100px;
+    height: 100px;
+  object-fit: contain;
+}
+
+/* Main Container */
+.mainContainer {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .mainContainer {
+    gap: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mainContainer {
+    gap: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainContainer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mainContainer {
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .mainContainer {
+    gap: 2rem;
+  }
+}
+
+/* Text Content */
+.textContent {
+  flex: 1;
+  max-width: 100%;
+  order: 1;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .textContent {
+    text-align: left;
+    padding: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .textContent {
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .textContent {
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textContent {
+    text-align: left;
+    max-width: 100%;
+    order: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .textContent {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .textContent {
+    max-width: 100%;
+  }
+}
+
+/* Title */
+.title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #0D0468;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.75rem;
+    margin-bottom: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .title {
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Description */
+.description {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #0D0468;
+}
+
+@media (min-width: 640px) {
+  .description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .description {
+    font-size: 1.375rem;
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 1280px) {
+  .description {
+    font-size: 1.625rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .description {
+    font-size: 1.875rem;
+  }
+}
+
+/* Maximum Resolution: 1920px+ */
+@media (min-width: 1920px) {
+  .whyChooseUsContainer {
+    max-width: 1920px;
+    margin: 0 auto;
+          padding: 135px 5rem 20px;
+  }
+  
+  .mainContainer {
+    max-width: 1920px;
+    padding: 0 5rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+  }
+  
+  .description {
+    font-size: 1.8rem;
+  }
+}
+
+/* Image Section */
+.imageSection {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  order: 2;
+}
+
+@media (min-width: 768px) {
+  .imageSection {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imageSection {
+    max-width: none;
+    order: 2;
+  }
+}
+
+/* Vector Background */
+.vectorBackground {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  height: 420px;
+  z-index: 1;
+}
+
+@media (min-width: 480px) {
+  .vectorBackground {
+    width: 520px;
+    height: 520px;
+  }
+}
+
+@media (min-width: 640px) {
+  .vectorBackground {
+    width: 580px;
+    height: 580px;
+    left: 60%;
+    top: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .vectorBackground {
+    width: 650px;
+    height: 650px;
+    left: 65%;
+    top: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .vectorBackground {
+        width: 640px;
+        height: 640px;
+        top: 55%;
+        left: 70%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .vectorBackground {
+        width: 800px;
+        height: 800px;
+        left: 80%;
+        top: 60%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .vectorBackground {
+            width: 850px;
+        height: 850px;
+        left: 89%;
+        top: 55%;
+  }
+}
+
+.vectorImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1;
+}
+
+/* Phone Mockups */
+.phoneMockups {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.phoneLeft {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 20;
+  margin-right: -35px;
+}
+
+.phoneRight {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 25;
+}
+
+@media (min-width: 480px) {
+  .phoneLeft {
+    width: 170px;
+    margin-right: -40px;
+  }
+
+  .phoneRight {
+    width: 190px;
+  }
+}
+
+@media (min-width: 640px) {
+  .phoneLeft {
+    width: 200px;
+    margin-right: -50px;
+  }
+
+  .phoneRight {
+    width: 220px;
+  }
+}
+
+@media (min-width: 768px) {
+  .phoneLeft {
+    width: 230px;
+    margin-right: -60px;
+  }
+
+  .phoneRight {
+    width: 250px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .phoneLeft {
+    width: 240px;
+    margin-right: -50px;
+  }
+
+  .phoneRight {
+    width: 300px;
+    top: 70px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .phoneLeft {
+        width: 300px;
+        margin-right: -75px;
+        left: 50px;
+        top: 50px;
+  }
+
+  .phoneRight {
+        width: 375px;
+        top: 150px;
+        left: 50px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .phoneLeft {
+            width: 330px;
+        margin-right: -65px;
+        left: 125px;
+        top: 10px;
+  }
+
+  .phoneRight {
+           top: 120px;
+        width: 400px;
+        left: 120px;
+  }
+}
+
+/* Decorative Vectors */
+.decorativeVectorBottom {
+  display: none;
+}
+
+.decorativeVectorTop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .decorativeVectorBottom {
+    display: block;
+    position: absolute;
+    bottom: 100px;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+    z-index: 5;
+  }
+
+  .decorativeVectorTop {
+    display: block;
+    position: absolute;
+    bottom: 160px;
+    left: 100px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    z-index: 5;
+  }
+}
+
+@media (min-width: 1280px) {
+  .decorativeVectorBottom {
+    width: 60px;
+    height: 60px;
+    right: 100px;
+  }
+
+  .decorativeVectorTop {
+    width: 45px;
+    height: 45px;
+    left: 120px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .decorativeVectorBottom {
+    width: 70px;
+    height: 70px;
+    right: 120px;
+    bottom: 120px;
+  }
+
+  .decorativeVectorTop {
+    width: 50px;
+    height: 50px;
+    left: 140px;
+    bottom: 180px;
+  }
+}
+
+/* Mobile specific adjustments (375px - 480px) */
+@media (min-width: 375px) and (max-width: 480px) {
+  .whyChooseUsContainer {
+    padding: 50px 1rem 10px;
+    min-height: 75vh;
+  }
+
+  .mainContainer {
+    gap: 100px;
+  }
+
+  .phoneLeft {
+    
+        width: 120px;
+        margin-right: -30px;
+           right: 100px;
+  }
+
+  .phoneRight {
+    width: 140px;
+    top: 25px;
+        right: 120px;
+  }
+
+  .vectorBackground {
+    height: 380px;
+            width: 250px;
+                    top: 120px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
