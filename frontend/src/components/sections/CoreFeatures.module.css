@@ -37,8 +37,8 @@ padding: 5rem 0 5rem 0;
   z-index: 10;
   width: 100%;
   max-width: 1920px;
-  margin: 0 -5px;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 @media (min-width: 640px) {
@@ -445,6 +445,12 @@ padding: 5rem 0 5rem 0;
 
 
 @media (min-width: 375px) and (max-width: 480px) {
+  /* Center container on mobile */
+  .container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
 
   .imageSection {
     display: none;
