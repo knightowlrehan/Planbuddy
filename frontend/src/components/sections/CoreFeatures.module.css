@@ -445,11 +445,12 @@ padding: 5rem 0 5rem 0;
 
 
 @media (min-width: 375px) and (max-width: 480px) {
-  /* Center container on mobile */
+  
   .container {
-    margin: 0 auto;
-    padding: 0 1rem;
+    margin: 0;
+    padding: 1rem;
     max-width: 100%;
+    width: 100%;
   }
 
   .imageSection {
@@ -460,6 +461,9 @@ padding: 5rem 0 5rem 0;
   .contentWrapper {
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   
@@ -467,9 +471,12 @@ padding: 5rem 0 5rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
     width: 100%;
     max-width: 100%;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
   }
 
 
