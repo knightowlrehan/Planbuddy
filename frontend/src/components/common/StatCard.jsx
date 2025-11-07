@@ -3,15 +3,15 @@ import styles from './StatCard.module.css'
 
 const StatCard = ({ number, label }) => {
   const [displayNumber, setDisplayNumber] = useState(0)
-  const [isVisible, setIsVisible] = useState(false)
+  const [animationTrigger, setAnimationTrigger] = useState(0)
   const ref = useRef()
   const targetNumber = parseInt(number)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !isVisible) {
-          setIsVisible(true)
+        if (entry.isIntersecting) {
+          setAnimationTrigger(prev => prev + 1)
         }
       },
       { threshold: 0.5 }
@@ -27,11 +27,13 @@ const StatCard = ({ number, label }) => {
         observer.unobserve(currentRef)
       }
     }
-  }, [isVisible])
+  }, [])
 
   useEffect(() => {
-    if (isVisible) {
-      const duration = 2000 // 2 seconds
+    if (animationTrigger > 0) {
+      setDisplayNumber(0) // Reset to 0 first
+      
+      const duration = 3000 // 2 seconds
       const steps = 60 // FPS
       const increment = targetNumber / steps
       let current = 0
@@ -48,7 +50,7 @@ const StatCard = ({ number, label }) => {
 
       return () => clearInterval(timer)
     }
-  }, [isVisible, targetNumber])
+  }, [animationTrigger, targetNumber])
 
   return (
     <div ref={ref} className={styles.statCard}>
