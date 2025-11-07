@@ -1,11 +1,10 @@
 import styles from './WhyChooseUs.module.css';
-
-const Vector1 = '/images/vectors/Vector1.svg';
-const Vector2 = '/images/vectors/Vector2.svg';
-const whyChooseUsMobileVector = '/images/vectors/why-choose-us-mobile.svg';
-const Avatar = '/images/avatar/avatar_2.png';
-const AppScreenShot1 = '/images/app-screenshots/mockup_3.png';
-const AppScreenShot2 = '/images/app-screenshots/mockup_4.png';
+import Vector1 from '/images/vectors/Vector1.svg';
+import Vector2 from '/images/vectors/Vector2.svg';
+import whyChooseUsMobileVector from '/images/vectors/why-choose-us-mobile.svg';
+import Avatar from '/images/avatar/avatar_2.png';
+import AppScreenShot1 from '/images/app-screenshots/mockup_3.png';
+import AppScreenShot2 from '/images/app-screenshots/mockup_4.png';
 
 export default function WhyChooseUs() {
     return (

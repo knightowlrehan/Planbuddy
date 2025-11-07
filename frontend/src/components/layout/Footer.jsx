@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react';
 import Button from '../common/Button';
 import styles from './Footer.module.css';
-
-const Logo = '/images/logo.svg';
-const avatar = '/images/avatar/avatar_3.png';
-const linkedinIcon = '/images/social-media/linkedin-fill.svg';
-const instagramIcon = '/images/social-media/instagram-fill.svg';
-const tiktokIcon = '/images/social-media/tiktok-fill.svg';
-const arrowUpIcon = '/images/arrow-up.svg';
-const phoneIcon = '/images/phone.svg';
-const mailIcon = '/images/mail.svg';
-const bottomVector = '/images/vectors/bottom-vector.svg'
+import Logo from '/images/logo.svg';
+import avatar from '/images/avatar/avatar_3.png';
+import linkedinIcon from '/images/social-media/linkedin-fill.svg';
+import instagramIcon from '/images/social-media/instagram-fill.svg';
+import tiktokIcon from '/images/social-media/tiktok-fill.svg';
+import arrowUpIcon from '/images/arrow-up.svg';
+import phoneIcon from '/images/phone.svg';
+import mailIcon from '/images/mail.svg';
+import bottomVector from '/images/vectors/bottom-vector.svg';
 
 export default function Footer() {
 

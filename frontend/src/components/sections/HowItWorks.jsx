@@ -1,10 +1,9 @@
 import styles from './HowItWorks.module.css';
-
-const PhoneMockup = '/images/app-screenshots/mockup_8.png';
-const StepIcon1 = '/images/icons/step-1.svg';
-const StepIcon2 = '/images/icons/step-2.svg';
-const StepIcon3 = '/images/icons/step-3.svg';
-const StepIcon4 = '/images/icons/step-4.svg';
+import PhoneMockup from '/images/app-screenshots/mockup_8.png';
+import StepIcon1 from '/images/icons/step-1.svg';
+import StepIcon2 from '/images/icons/step-2.svg';
+import StepIcon3 from '/images/icons/step-3.svg';
+import StepIcon4 from '/images/icons/step-4.svg';
 
 export default function HowItWorks() {
     const steps = [

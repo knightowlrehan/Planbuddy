@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './CoreFeatures.module.css';
-
-const mockupImage = '/images/app-screenshots/mockup_6.png';
-const avatar = '/images/avatar/avatar_3.png';
-const progressIcon = '/images/icons/progress-tracking.svg';
-const subGoalsIcon = '/images/icons/sub-goal.svg';
-const customizableIcon = '/images/icons/customizable-goal.svg';
-const reminderIcon = '/images/icons/reminder.svg';
+import mockupImage from '/images/app-screenshots/mockup_6.png';
+import avatar from '/images/avatar/avatar_3.png';
+import progressIcon from '/images/icons/progress-tracking.svg';
+import subGoalsIcon from '/images/icons/sub-goal.svg';
+import customizableIcon from '/images/icons/customizable-goal.svg';
+import reminderIcon from '/images/icons/reminder.svg';
 
 const features = [
   {

@@ -1,14 +1,10 @@
 import styles from './ReasonsToLove.module.css';
-
-
-const FriendlyInterfaceIcon = '/images/vectors/business-vector.svg';
-const PowerfulOptionsIcon = '/images/vectors/settings-vector.svg';
-const SimpleSetupIcon = '/images/vectors/design-vector.svg';
-const EasilyManageableIcon = '/images/vectors/document-vector.svg';
-const CleanDesignIcon = '/images/vectors/quill-pen-vector.svg';
-
-
-const  purpleVector = '/images/vectors/reasons-to-love.svg';
+import FriendlyInterfaceIcon from '/images/vectors/business-vector.svg';
+import PowerfulOptionsIcon from '/images/vectors/settings-vector.svg';
+import SimpleSetupIcon from '/images/vectors/design-vector.svg';
+import EasilyManageableIcon from '/images/vectors/document-vector.svg';
+import CleanDesignIcon from '/images/vectors/quill-pen-vector.svg';
+import purpleVector from '/images/vectors/reasons-to-love.svg';
 
 export default function ReasonsToLove() {
     const reasons = [

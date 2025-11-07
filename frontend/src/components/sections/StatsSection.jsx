@@ -1,8 +1,7 @@
 import StatCard from '../common/StatCard'
 import styles from './StatsSection.module.css'
-
-const Vector1 = '/images/vectors/Vector1.svg';
-const Vector2 = '/images/vectors/Vector2.svg';
+import Vector1 from '/images/vectors/Vector1.svg';
+import Vector2 from '/images/vectors/Vector2.svg';
 
 const StatsSection = () => {
   const stats = [
