@@ -123,7 +123,7 @@
 
 @media (min-width: 1024px) {
   .stepsContainer {
-   max-width: 850px;
+    max-width: 1000px;
     gap: 3.5rem;
     padding-right: 350px;
     margin-left: 100px;
@@ -132,7 +132,7 @@
 
 @media (min-width: 1280px) {
   .stepsContainer {
-    max-width: 950px;
+    max-width: 1200px;
     gap: 3.5rem;
     padding-right: 350px;
     margin-left: 150px;
@@ -141,7 +141,7 @@
 
 @media (min-width: 1536px) {
   .stepsContainer {
-    max-width: 950px;
+    max-width: 1200px;
     gap: 3.5rem;
     padding-right: 350px;
     margin-left: 200px;
@@ -166,19 +166,19 @@
 @media (min-width: 1024px) {
   .stepItemRight {
     margin-left: auto;
-    padding-left: 100px;
+    padding-left: 200px;
   }
 }
 
 @media (min-width: 1280px) {
   .stepItemRight {
-    padding-left: 120px;
+    padding-left: 250px;
   }
 }
 
 @media (min-width: 1536px) {
   .stepItemRight {
-    padding-left: 150px;
+    padding-left: 255px;
   }
 }
 
@@ -260,29 +260,29 @@
 
 @media (min-width: 640px) {
   .stepIcon {
-    width: 75px;
-    height: 75px;
+    width: 150px;
+    height: 150px;
   }
 }
 
 @media (min-width: 1024px) {
   .stepIcon {
-    width: 85px;
-    height: 85px;
+    width: 150px;
+    height: 150px;
   }
 }
 
 @media (min-width: 1280px) {
   .stepIcon {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
   }
 }
 
 @media (min-width: 1536px) {
   .stepIcon {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -398,13 +398,14 @@
 }
 
 
-.stepText1 {
-  max-width: 500px;
+.stepText1, .stepText3 {
+  max-width: 400px;
 }
 
-.stepText2, .stepText3, .stepText4 {
+.stepText2, .stepText4 {
   max-width: 800px;
 }
+
 
 
 .stepIcon1 {
@@ -414,29 +415,29 @@
 
 @media (min-width: 640px) {
   .stepIcon1 {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
   }
 }
 
 @media (min-width: 1024px) {
   .stepIcon1 {
-    width: 70px;
-    height: 70px;
+    width: 125px;
+    height: 125px;
   }
 }
 
 @media (min-width: 1280px) {
   .stepIcon1 {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 }
 
 @media (min-width: 1536px) {
   .stepIcon1 {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 }
 
@@ -479,22 +480,22 @@
 
 @media (min-width: 1280px) {
   .phoneContainer {
-width: 320px;
+        width: 320px;
         right: -70px;
   }
 }
 
 @media (min-width: 1536px) {
   .phoneContainer {
-    width: 320px;
-        right: -70px;
+        width: 320px;
+        right: -160px;
   }
 }
 
 @media (min-width: 1920px) {
   .phoneContainer {
-    width: 320px;
-        right: -70px;
+        width: 320px;
+        right: -160px;
   }
 }
 
