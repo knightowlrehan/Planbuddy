@@ -37,8 +37,8 @@ padding: 5rem 0 5rem 0;
   z-index: 10;
   width: 100%;
   max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  margin: 0 -5px;
+  padding: 20px;
 }
 
 @media (min-width: 640px) {
@@ -60,7 +60,7 @@ padding: 5rem 0 5rem 0;
 }
 
 .sectionTitle {
-  font-size: 3rem;
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
   color: #0D0468;
@@ -440,5 +440,120 @@ padding: 5rem 0 5rem 0;
 @media (min-width: 1280px) {
   .featureDescription {
     font-size: 1.25rem;
+  }
+}
+
+
+@media (min-width: 375px) and (max-width: 480px) {
+
+  .imageSection {
+    display: none;
+  }
+
+  
+  .contentWrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  
+  .featuresWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  .featureItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    max-width: 100%;
+    aspect-ratio: 4/3;
+    min-height: 140px;
+  }
+
+
+  .featureItem.top,
+  .featureItem.bottom {
+    background: #C880FF;
+    color: white;
+  }
+
+  
+  .featureItem.middleTop,
+  .featureItem.middleBottom {
+    background: white;
+    color: #111827;
+  }
+
+
+  .iconContainer {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    background: transparent;
+    box-shadow: none;
+  }
+
+ 
+
+
+
+
+  .featureContent {
+    flex: none;
+  }
+
+  .featureTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+ 
+  .featureItem.top .featureTitle,
+  .featureItem.bottom .featureTitle {
+        color: black;
+        padding: 10px 0px;
+        font-size: 15px;
+        margin-top: -5px;
+  }
+
+
+  .featureItem.middleTop .featureTitle,
+  .featureItem.middleBottom .featureTitle {
+    color: black;
+    font-size: 15px;
+    margin-top: 8px;
+  }
+
+  
+  .featureDescription {
+    display: none;
+  }
+
+
+  .iconSub-goals,
+  .iconCustomizableGoal{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+  }
+  .iconProgressTracking{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+  }
+  .iconReminder {
+    width: 200px;
+    height: 200px;
+    padding: 0;
   }
 }
