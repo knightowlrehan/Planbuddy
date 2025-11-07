@@ -1,40 +1,40 @@
 import { useState, useEffect, useRef } from 'react';
 import styles from './Testimonials.module.css';
-
-
+import customer1 from '../../assets/images/customer-1.png';
+import customer2 from '../../assets/images/customer-2.png';
 const testimonials = [
     {
         id: 1,
         name: 'Sarah M.',
-        avatar: '/images/customer-1.png',
+        avatar:customer1,
         text: 'This app transformed the way I approach my goals. Breaking them into small tasks keeps me motivated every day!',
         rating: 5
     },
     {
         id: 2,
         name: 'Kasan T.',
-        avatar: '/images/customer-2.png',
+        avatar: customer2,
         text: 'I love how the app organizes everything visually. Seeing my completed goals motivates me to aim higher.',
         rating: 5
     },
     {
         id: 3,
         name: 'Sarah M.',
-        avatar: '/images/customer-1.png',
+        avatar: customer1,
         text: 'This app transformed the way I approach my goals. Breaking them into small tasks keeps me motivated every day!',
         rating: 5
     },
     {
         id: 4,
         name: 'John D.',
-        avatar: '/images/customer-2.png',
+        avatar: customer2,
         text: 'Finally, a goal tracking app that actually works! The reminders and progress tracking keep me on track.',
         rating: 5
     },
     {
         id: 5,
         name: 'Emma L.',
-        avatar: '/images/customer-1.png',
+        avatar: customer1,
         text: 'PlanBuddy has completely changed how I manage my daily tasks. Highly recommend!',
         rating: 5
     }
