@@ -1,10 +1,10 @@
 import styles from './WhyChooseUs.module.css';
-import Vector1 from '/images/vectors/Vector1.svg';
-import Vector2 from '/images/vectors/Vector2.svg';
-import whyChooseUsMobileVector from '/images/vectors/why-choose-us-mobile.svg';
-import Avatar from '/images/avatar/avatar_2.png';
-import AppScreenShot1 from '/images/app-screenshots/mockup_3.png';
-import AppScreenShot2 from '/images/app-screenshots/mockup_4.png';
+import Vector1 from '../../assets/images/vectors/Vector1.svg';
+import Vector2 from '../../assets/images/vectors/Vector2.svg';
+import whyChooseUsMobileVector from '../../assets/images/vectors/why-choose-us-mobile.svg';
+import Avatar from '../../assets/images/avatar/avatar_2.png';
+import AppScreenShot1 from '../../assets/images/app-screenshots/mockup_3.png';
+import AppScreenShot2 from '../../assets/images/app-screenshots/mockup_4.png';
 
 export default function WhyChooseUs() {
     return (

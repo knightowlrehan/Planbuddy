@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Button from '../common/Button';
 import styles from './HeroSection.module.css';
-import appScreenShot1 from '/images/app-screenshots/mockup_1.png';
-import appScreenShot2 from '/images/app-screenshots/mockup_2.png';
-import downloadingAppAvatar from '/images/avatar/downloading-app-avatar.svg';
-import headerVector from '/images/vectors/header-Vector.svg';
-import mobileHeaderVector from '/images/vectors/mobile-header-Vector.svg';
+import appScreenShot1 from '../../assets/images/app-screenshots/mockup_1.png';
+import appScreenShot2 from '../../assets/images/app-screenshots/mockup_2.png';
+import downloadingAppAvatar from '../../assets/images/avatar/downloading-app-avatar.svg';
+import headerVector from '../../assets/images/vectors/header-Vector.svg';
+import mobileHeaderVector from '../../assets/images/vectors/mobile-header-Vector.svg';
 
 export default function HeroSection() {
   const [isMobile, setIsMobile] = useState(false);

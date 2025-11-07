@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './MissionSection.module.css';
-import Vector1 from '/images/vectors/Vector1.svg';
+import Vector1 from '../../assets/images/vectors/Vector1.svg';
 
 const MissionSection = () => {
   return (
