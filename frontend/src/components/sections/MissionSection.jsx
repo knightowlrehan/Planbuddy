@@ -5,7 +5,7 @@ const Vector1 = '/images/vectors/Vector1.svg';
 
 const MissionSection = () => {
   return (
-    <div className={styles.missionSection}>
+    <div id="about" className={styles.missionSection}>
       <div className={styles.titleContainer}>
         <img 
           className={styles.vectorBackground}

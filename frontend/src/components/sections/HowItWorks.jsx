@@ -39,7 +39,7 @@ export default function HowItWorks() {
     ];
 
     return (
-        <section className={styles.howItWorksContainer}>
+        <section id="how-it-works" className={styles.howItWorksContainer}>
             <div className={styles.contentWrapper}>
                 
                 <h2 className={styles.sectionTitle}>How PlanBuddy Works?</h2>

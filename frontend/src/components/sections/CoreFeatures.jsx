@@ -41,7 +41,7 @@ const features = [
 
 export default function CoreFeatures() {
   return (
-    <section className={styles.coreFeaturesSection}>
+    <section id="features" className={styles.coreFeaturesSection}>
       
       
       <div className={styles.container}>
