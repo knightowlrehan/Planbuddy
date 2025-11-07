@@ -123,8 +123,8 @@
 
 @media (min-width: 768px) {
   .avatarContainerDesktop {
-    top: 30px;
-    right: 100px;
+    top: 350px;
+    right: 365px;
   }
 }
 
@@ -144,8 +144,14 @@
 
 @media (min-width: 1536px) {
   .avatarContainerDesktop {
-              top: -18px;
-        right: 65px;
+        top: 5px;
+        right: -5px;
+  }
+}
+@media (min-width: 1920px) {
+  .avatarContainerDesktop {
+        top: -45px;
+        right: 60px;
   }
 }
 
@@ -158,8 +164,8 @@
 
 @media (min-width: 640px) {
   .avatarDesktop {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -384,7 +390,7 @@
   .whyChooseUsContainer {
     max-width: 1920px;
     margin: 0 auto;
-          padding: 135px 5rem 20px;
+          padding: 150px 5rem 20px;
   }
   
   .mainContainer {
@@ -455,10 +461,10 @@
 
 @media (min-width: 768px) {
   .vectorBackground {
-    width: 650px;
-    height: 650px;
-    left: 65%;
-    top: 50%;
+    width: 575px;
+    height: 575px;
+    left: 50%;
+    top: 65%;
   }
 }
 
@@ -547,12 +553,15 @@
 
 @media (min-width: 768px) {
   .phoneLeft {
-    width: 230px;
-    margin-right: -60px;
+    width: 250px;
+    margin-right: 100px;
+    top:85px;
   }
 
   .phoneRight {
-    width: 250px;
+        width: 280px;
+        top: 130px;
+        right: 155px;
   }
 }
 
