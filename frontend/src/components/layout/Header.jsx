@@ -24,6 +24,18 @@ const Header = () => {
     { label: 'How it works', href: '#how-it-works' },
     { label: 'Contact Us', href: '#contact' }
   ]
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault()
+    const targetElement = document.querySelector(href)
+    if (targetElement) {
+      targetElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+    setIsMenuOpen(false)
+  }
   
   return (
     <header className={`${styles.header} ${isScrolled ? styles.headerScrolled : styles.headerTransparent}`}>
@@ -48,6 +60,7 @@ const Header = () => {
                 <a 
                   href={item.href}
                   className={styles.navLink}
+                  onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.label}
                 </a>
@@ -72,7 +85,7 @@ const Header = () => {
                 key={item.label}
                 href={item.href}
                 className={styles.mobileNavLink}
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => handleNavClick(e, item.href)}
               >
                 {item.label}
               </a>
