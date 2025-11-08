@@ -509,9 +509,9 @@
 /* Desktop - Medium */
 @media (min-width: 1280px) and (max-width: 1439px) {
   .phoneLeft {
-        left: 5%;
+        left: 2%;
         right: auto;
-        top: 40%;
+        top: 36%;
         transform: translateY(-50%) rotate(-5deg);
   }
 }

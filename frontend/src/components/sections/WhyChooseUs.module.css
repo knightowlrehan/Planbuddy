@@ -16,7 +16,7 @@
 
 @media (min-width: 768px) {
   .whyChooseUsContainer {
-    padding: 120px 2.5rem 20px;
+    padding: 120px 2.5rem 110px;
   }
 }
 
@@ -124,34 +124,34 @@
 @media (min-width: 768px) {
   .avatarContainerDesktop {
     top: 350px;
-    right: 365px;
+    right: 370px;
   }
 }
 
 @media (min-width: 1024px) {
   .avatarContainerDesktop {
-    top: -20px;
+    top: -10px;
     right: 80px;
   }
 }
 
 @media (min-width: 1280px) {
   .avatarContainerDesktop {
-    top: 0px;
+    top: 10px;
     right: 25px;
   }
 }
 
 @media (min-width: 1536px) {
   .avatarContainerDesktop {
-        top: 5px;
-        right: -5px;
+        top: 12px;
+        right: 40px;
   }
 }
 @media (min-width: 1920px) {
   .avatarContainerDesktop {
-        top: -45px;
-        right: 60px;
+        top: -40px;
+        right: 140px;
   }
 }
 
@@ -215,7 +215,7 @@
 /* Main Container */
 .mainContainer {
   width: auto;
-  margin: 0 auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,14 +315,14 @@
 
 @media (min-width: 640px) {
   .title {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     margin-bottom: 1.5rem;
   }
 }
 
 @media (min-width: 768px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -490,7 +490,7 @@
   .vectorBackground {
         width: 850px;
         height: 850px;
-        left: 89%;
+        left: 80%;
         top: 55%;
   }
 }
@@ -569,11 +569,13 @@
   .phoneLeft {
     width: 240px;
     margin-right: -50px;
+    top: 36px;
   }
 
   .phoneRight {
     width: 300px;
-    top: 70px;
+    top: 80px;
+    right: 5px;
   }
 }
 
@@ -595,7 +597,7 @@
 @media (min-width: 1536px) {
   .phoneLeft {
         width: 330px;
-        margin-right: -65px;
+        margin-right: -10px;
         left: 125px;
         top: 10px;
   }
@@ -603,7 +605,7 @@
   .phoneRight {
         top: 120px;
         width: 400px;
-        left: 120px;
+        left: 70px;
   }
 }
 

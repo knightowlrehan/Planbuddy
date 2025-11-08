@@ -88,7 +88,7 @@ padding: 5rem 0 5rem 0;
   }
 }
 
-/* Content Wrapper - Side by side layout */
+
 .contentWrapper {
   display: flex;
   align-items: center;
@@ -133,13 +133,13 @@ padding: 5rem 0 5rem 0;
 
 @media (min-width: 768px) {
   .phoneContainer {
-    width: 260px;
+    width: 350px;
   }
 }
 
 @media (min-width: 1024px) {
   .phoneContainer {
-    width: 200px;
+    width: 275px;
   }
 }
 
@@ -183,17 +183,20 @@ padding: 5rem 0 5rem 0;
 
 @media (min-width: 768px) {
   .avatar {
-    width: 180px;
-    height: 180px;
+    width: 300px;
+    height: 300px;
+    bottom: 2px;
+    left: 200px;
+
   }
 }
 
 @media (min-width: 1024px) {
   .avatar {
-    width: 150px;
-    height: 150px;
-    bottom: -3%;
-    right: -35%;
+    width: 250px;
+    height: 250px;
+    bottom: -2%;
+    left: 55%;
   }
 }
 
@@ -215,7 +218,7 @@ padding: 5rem 0 5rem 0;
   }
 }
 
-/* Right Side - Features in C Shape */
+
 .featuresWrapper {
   position: relative;
   display: flex;
@@ -245,7 +248,7 @@ padding: 5rem 0 5rem 0;
   }
 }
 
-/* Feature Item Base */
+
 .featureItem {
   display: flex;
   align-items:flex-start;
@@ -258,33 +261,33 @@ padding: 5rem 0 5rem 0;
   }
 }
 
-/* C-Shape Positioning for Desktop */
+
 @media (min-width: 1024px) {
   /* Top feature - aligned to top right */
   .featureItem.top {
     margin-bottom: 4rem ;
     align-self: flex-start;
-    max-width: 150%;
+    max-width: 70%;
   }
   
   /* Middle-top feature - slightly indented */
   .featureItem.middleTop {
     margin-bottom: 4rem ;
     align-self: flex-end;
-           max-width: 79%;
+           max-width: 70%;
   }
   
   /* Middle-bottom feature - slightly indented */
   .featureItem.middleBottom {
     margin-bottom: 4rem ;
     align-self: flex-end;
-    max-width: 90%;
+    max-width: 70%;
   }
   
   /* Bottom feature - aligned to bottom right */
   .featureItem.bottom {
     align-self: flex-start;
-    max-width: 85%;
+    max-width: 70%;
    
   }
 }
@@ -349,36 +352,154 @@ padding: 5rem 0 5rem 0;
   object-fit: contain;
 }
 
-/* Individual icon size classes */
-.iconProgressTracking {
-     height: 250px;
-    width: 250px;
-    padding-top: 10px;
+
+
+
+@media (min-width: 640px) {
+    .iconProgressTracking {
+        width: 200px;
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    .iconSub-goals {
+        width: 90px;
+        height: 90px;
+    }
+
+    .iconCustomizableGoal {
+        width: 80px;
+        height: 80px;
+    }
+
+    .iconReminder {
+        width: 150px;
+        height: 150px;
+    }
 }
 
-.iconSub-goals {
-    width: 120px;
-    height: 120px;
-    padding-bottom: 10px;
+
+@media (min-width: 768px) {
+    .iconProgressTracking {
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .iconSub-goals {
+        width: 100px;
+        height: 100px;
+    }
+
+    .iconCustomizableGoal {
+        width: 80px;
+        height: 80px;
+    }
+
+    .iconReminder {
+        width: 180px;
+        height: 180px;
+    }
 }
 
-.iconCustomizableGoal {
- width: 100px;
-    height: 100px;
-    padding-bottom: 10px;
+
+@media (min-width: 1024px) {
+    .iconProgressTracking {
+        width: 180px;
+        height: 180px;
+        padding-top: 5px;
+    }
+
+    .iconSub-goals {
+        width: 100px;
+        height: 100px;
+        padding-bottom: 5px;
+    }
+
+    .iconCustomizableGoal {
+        width: 80px;
+        height: 80px;
+        padding-bottom: 5px;
+    }
+
+    .iconReminder {
+        width: 150px;
+        height: 150px;
+    }
 }
 
-.iconReminder {
-  width: 180px;
-  height: 180px;
+
+@media (min-width: 1280px) {
+    .iconProgressTracking {
+        width: 250px;
+        height: 250px;
+        padding-top: 8px;
+    }
+
+    .iconSub-goals {
+        width: 120px;
+        height: 120px;
+        padding-bottom: 8px;
+    }
+
+    .iconCustomizableGoal {
+        width: 100px;
+        height: 100px;
+        padding-bottom: 8px;
+    }
+
+    .iconReminder {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media (min-width: 1536px) {
+    .iconProgressTracking {
+        width: 250px;
+        height: 250px;
+        padding-top: 10px;
+    }
+
+    .iconSub-goals {
+        width: 120px;
+        height: 120px;
+        padding-bottom: 10px;
+    }
+
+    .iconCustomizableGoal {
+        width: 100px;
+        height: 100px;
+        padding-bottom: 10px;
+    }
+
+    .iconReminder {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 .featureContent {
   flex: 1;
 }
 
+
+@media (max-width: 760px) {
+  .featureContent {
+   
+    padding-left: 0.5rem;
+  }
+  
+  .featureItem {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .featureTitle {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #111827;
   margin-bottom: 0.5rem;
