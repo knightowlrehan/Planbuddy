@@ -1,8 +1,5 @@
 
-.reasonsContainer {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+.reasonsContainer { 
 
 .reasonsContainer {
   position: relative;
@@ -346,36 +343,60 @@
 /* Mobile Specific Adjustments (375px - 480px) */
 @media (min-width: 375px) and (max-width: 480px) {
   .reasonsContainer {
-    padding: 60px 1rem;
+    padding: 60px 1rem 0;
   }
 
   .sectionTitle {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 2.5rem;
   }
 
   .reasonsGrid {
-    gap: 2.5rem;
+    gap: 2rem;
+  }
+
+  .reasonCard {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 100%;
+    gap: 2rem;
   }
 
   .iconContainer {
-    width: 140px;
-    height: 140px;
-    margin-bottom: 1.25rem;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+    flex-shrink: 0;
   }
 
   .reasonIcon {
-    width: 55px;
-    height: 55px;
+    width: 30px;
+    height: 30px;
   }
 
   .reasonTitle {
-    font-size: 1.125rem;
-    margin-bottom: 0.625rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .reasonDescription {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+    max-width: 100%;
+  }
+
+  .bottomReasonsContainer {
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
   }
 
 }
@@ -428,6 +449,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 10;
+  padding:20px;
 }
 
 /* Section Title */
@@ -724,36 +746,60 @@
 /* Mobile Specific Adjustments (375px - 480px) */
 @media (min-width: 375px) and (max-width: 480px) {
   .reasonsContainer {
-    padding: 60px 1rem;
+    padding: 60px 1rem 0;
   }
 
   .sectionTitle {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 2.5rem;
   }
 
   .reasonsGrid {
-    gap: 2.5rem;
+    gap: 2rem;
+  }
+
+  .reasonCard {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 100%;
+    gap: 1rem;
   }
 
   .iconContainer {
-    width: 140px;
-    height: 140px;
-    margin-bottom: 1.25rem;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+    flex-shrink: 0;
   }
 
   .reasonIcon {
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
   }
 
   .reasonTitle {
-    font-size: 1.125rem;
-    margin-bottom: 0.625rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .reasonDescription {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+    max-width: 100%;
+  }
+
+  .bottomReasonsContainer {
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
   }
 
 }

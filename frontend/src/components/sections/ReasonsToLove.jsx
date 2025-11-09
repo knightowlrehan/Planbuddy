@@ -59,9 +59,10 @@ export default function ReasonsToLove() {
                                 />
                             </div>
 
-                            
-                            <h3 className={styles.reasonTitle}>{reason.title}</h3>
-                            <p className={styles.reasonDescription}>{reason.description}</p>
+                            <div className={styles.textContent}>
+                                <h3 className={styles.reasonTitle}>{reason.title}</h3>
+                                <p className={styles.reasonDescription}>{reason.description}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -84,9 +85,10 @@ export default function ReasonsToLove() {
                                 />
                             </div>
 
-                            {/* Text Content */}
-                            <h3 className={styles.reasonTitle}>{reason.title}</h3>
-                            <p className={styles.reasonDescription}>{reason.description}</p>
+                            <div className={styles.textContent}>
+                                <h3 className={styles.reasonTitle}>{reason.title}</h3>
+                                <p className={styles.reasonDescription}>{reason.description}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
