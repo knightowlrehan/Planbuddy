@@ -660,7 +660,7 @@ padding: 5rem 0 5rem 0;
         color: black;
         padding: 10px 0px;
         font-size: 15px;
-        margin-top: -5px;
+        margin-top: -15px;
   }
 
 
@@ -668,7 +668,7 @@ padding: 5rem 0 5rem 0;
   .featureItem.middleBottom .featureTitle {
     color: black;
     font-size: 15px;
-    margin-top: 8px;
+    margin-top: -5px;
   }
 
   
