@@ -165,7 +165,7 @@
 @media (min-width: 1024px) {
   .stepItemRight {
     margin-left: auto;
-    padding-left: 200px;
+    
   }
 }
 
@@ -568,7 +568,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .phoneContainer {
-    max-width: 220px;
+    max-width: 245px;
     right: -3rem;
   }
 }
