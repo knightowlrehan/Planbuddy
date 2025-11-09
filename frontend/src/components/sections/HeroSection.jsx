@@ -38,15 +38,28 @@ export default function HeroSection() {
           {/* Text Section */}
           <div className={styles.textSection}>
             <h1 className={styles.heroTitle}>
-              <span className={styles.heroTitleText}>TURN BIG</span>
-              <br />
-              <span className={styles.heroTitleText}>DREAMS INTO</span>
-              <br />
-              <span className={styles.heroTitleText}>DAILY WINS</span>
-              <br />
-              <span className={styles.heroTitleText}>WITH</span>
-              <br />
-              <span className={styles.heroTitleText}>PLANBUDDY</span>
+              {isMobile ? (
+                <>
+                  <span className={styles.heroTitleText}>TURN BIG</span>
+                  <span className={styles.heroTitleText}>DREAMS INTO</span>
+                  <br />
+                  <span className={styles.heroTitleText}>DAILY WINS WITH</span>
+                  <br />
+                  <span className={styles.heroTitleText}>PLANBUDDY</span>
+                </>
+              ) : (
+                <>
+                  <span className={styles.heroTitleText}>TURN BIG</span>
+                  <br />
+                  <span className={styles.heroTitleText}>DREAMS INTO</span>
+                  <br />
+                  <span className={styles.heroTitleText}>DAILY WINS</span>
+                  <br />
+                  <span className={styles.heroTitleText}>WITH</span>
+                  <br />
+                  <span className={styles.heroTitleText}>PLANBUDDY</span>
+                </>
+              )}
             </h1>
             
             {/* CTA Section */}
